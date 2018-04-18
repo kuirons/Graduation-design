@@ -1,0 +1,207 @@
+/* CSS reset */
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #F7F7F7;
+}
+
+img {
+    border: 0;
+}
+
+header {
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.clr {
+    clear: both;
+}
+
+.container > header {
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.container > header h1 {
+    position: relative;
+    color: #275973;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding: 0 0 5px 0;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.container > header h1 strong {
+    font-family: 'Open Sans Condensed', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 5px 0 5px;
+    line-height: 35px;
+    color: #275973;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.container > header h1 span {
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    color: #5a99ba;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    width: 600px;
+    padding: 20px 50px 20px 50px;
+    -webkit-border-radius: 8px/7px;
+    -moz-border-radius: 8px/7px;
+    border-radius: 8px/7px;
+    background-color: #ebebeb;
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    border: solid 1px #cbc9c9;
+    margin: 50px;
+}
+
+.form label {
+    color: #000;
+    font-size: 14px;
+    font-family: Arial, Helvetica, serif;
+}
+
+.form .select-style {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 60px;
+    -webkit-padding-start: 10px;
+    -webkit-user-select: none;
+    background-image: url(../images/select-arrow.png),
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 0 solid #FFF;
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input[type=radio].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    display: block!important;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+    padding-left: 26px;
+    height: 21px;
+    display: inline-block;
+    line-height: 21px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 0 -21px;
+}
+
+label.css-label {
+    background-image: url(../images/css_radio.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.operate {
+    margin: 20px 0 15px 0;
+}
+
+input.submit_button {
+    background: #f47e7e;
+    display: inline-block;
+    color: #fff !important;
+    cursor: pointer;
+    font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    border: solid 0 #e3edf4;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+input.submit_button:hover {
+    background-color: #d83c3c;
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+#inputs input {
+    background: #f1f1f1;
+    padding: 8px 12px 8px 12px;
+    margin: 10px 0 10px 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#username {
+    background-position: 5px -2px !important;
+}
+
